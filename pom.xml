@@ -16,4 +16,12 @@
 	<description>谷粒商城</description>
 
 
+	<modules>
+		<module>gulimall-member</module>
+		<module>gulimall-order</module>
+		<module>gulimall-ware</module>
+		<module>gulimall-product</module>
+		<module>gulimall-coupon</module>
+		<module>renren-fast</module>
+	</modules>
 </project>
