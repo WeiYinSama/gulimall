@@ -10,9 +10,8 @@ import java.util.List;
  * @Create: 2023/3/6 - 23:38
  */
 @Data
-public class CategoryEntity {
+public class Category {
 
     private CategoryPo categoryPo;
-
-    private List<CategoryEntity> children;
+    private List<Category> children;
 }

@@ -3,7 +3,7 @@ package net.avalon.gulimall.product.controller;
 import net.avalon.core.util.ResponseBody;
 import net.avalon.core.util.ResponseUtil;
 import net.avalon.gulimall.product.dao.CategoryDao;
-import net.avalon.gulimall.product.dao.bo.CategoryEntity;
+import net.avalon.gulimall.product.dao.bo.Category;
 import net.avalon.gulimall.product.mapper.generator.CategoryPoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,7 +27,7 @@ public class CategoryController {
 
     @GetMapping("/list/tree")
     public ResponseBody listTree(){
-        List<CategoryEntity> ret = dao.listWithTree();
+        List<Category> ret = dao.listWithTree();
         return ResponseUtil.ok(ret);
     }
 }
