@@ -80,12 +80,12 @@
 
 
     <!-- 日志输出级别 -->
-    <logger name="net.avalon.goodsdemo" level="INFO"/>
-    <logger name="net.avalon.goodsdemo.controller" level="DEBUG"/>
-    <logger name="net.avalon.goodsdemo.service" level="DEBUG"/>
-    <logger name="net.avalon.goodsdemo.dao" level="DEBUG"/>
-    <!-- mapper层 日志级别：DEBUG: 展示SQL -->
-    <logger name="net.avalon.goodsdemo.mapper" level="INFO"/>
+    <logger name="net.avalon.gulimall.product" level="INFO"/>
+    <logger name="net.avalon.gulimall.product.controller" level="DEBUG"/>
+    <logger name="net.avalon.gulimall.product.service" level="DEBUG"/>
+    <logger name="net.avalon.gulimall.product.dao" level="DEBUG"/>
+    <!-- mapper层 日志级别：DEBUG: 展示SQL，默认INFO -->
+    <logger name="net.avalon.gulimall.product.mapper" level="DEBUG"/>
     <root level="INFO">
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="FILE"/>

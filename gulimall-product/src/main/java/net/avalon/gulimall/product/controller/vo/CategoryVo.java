@@ -3,8 +3,6 @@ package net.avalon.gulimall.product.controller.vo;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-import net.avalon.gulimall.product.dao.bo.Category;
-import net.avalon.gulimall.product.mapper.generator.po.CategoryPo;
 
 /**
  * @Author: Weiyin
@@ -29,21 +27,21 @@ public class CategoryVo {
     private String productUnit;
 
 
-    public Category toBo(){
-        Category entity = new Category();
-
-        CategoryPo po = new CategoryPo();
-        po.setName(name);
-        po.setParentCid(parentCid);
-        po.setCatLevel(catLevel);
-        po.setShowStatus(showStatus);
-        po.setSort(sort);
-
-        po.setCatId(catId);
-        po.setIcon(icon);
-        po.setProductUnit(productUnit);
-
-        entity.setCategoryPo(po);
-        return entity;
-    }
+//    public Category toBo(){
+//        Category entity = new Category();
+//
+//        CategoryPo po = new CategoryPo();
+//        po.setName(name);
+//        po.setParentCid(parentCid);
+//        po.setCatLevel(catLevel);
+//        po.setShowStatus(showStatus);
+//        po.setSort(sort);
+//
+//        po.setCatId(catId);
+//        po.setIcon(icon);
+//        po.setProductUnit(productUnit);
+//
+//        entity.setCategoryPo(po);
+//        return entity;
+//    }
 }

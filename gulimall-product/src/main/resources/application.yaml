@@ -1,6 +1,6 @@
 server:
   #服务端口号
-  port: 0
+  port: 5000
 
 management:
   endpoints:
@@ -63,11 +63,8 @@ mybatis:
     map-underscore-to-camel-case: true
 
 
-goodsdemo:
-  product:
-    max-related-product: 5
-  page-size:
-    default: 10
-    max: 100
+page-size:
+  default: 10
+  max: 100
 
 

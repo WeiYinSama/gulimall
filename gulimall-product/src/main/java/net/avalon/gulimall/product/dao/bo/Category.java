@@ -12,6 +12,14 @@ import java.util.List;
 @Data
 public class Category {
 
-    private CategoryPo categoryPo;
+    private Long catId;
+    private String name;
+    private Long parentCid;
+    private Integer catLevel;
+    private Byte showStatus;
+    private Integer sort;
+    private String icon;
+    private String productUnit;
+    private Integer productCount;
     private List<Category> children;
 }
